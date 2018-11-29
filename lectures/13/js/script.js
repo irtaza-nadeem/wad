@@ -26,12 +26,24 @@ var correctAnswers = 0;
 var quizOver = false;
 displayCurrentQuestion();
 document.getElementById("quiz-message").style.display = 'none';
+
 function displayNext() {
-    /*Write your code here */
+
+        currentQuestion++;
+    displayCurrentQuestion();
 }
 
 function displayCurrentQuestion() {
-    /*Write your code here */
+
+    document.getElementById("question").innerHTML = questions[currentQuestion].question;
+    var list = document.getElementById("choice-list");
+    list.innerHTML = "";
+
+    var a;
+    for(a=0; a<4; a++)
+    {
+        list.innerHTML += "<input type=\"radio\" name=\"gender\" value="+a+" id =\"btn\">" + questions[currentQuestion].choices[a] + '<br>';
+    }
 }
 
 function resetQuiz() {
