@@ -1,0 +1,186 @@
+
+
+/*----------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9ebee;
+}
+
+.wrapper {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.profile {
+    margin: 8px 0;
+    background-color: white;
+    border-radius: 10px;
+}
+#dp {
+    border-radius: 50%;
+    border: 4px solid blue;
+    width: 150px;
+    height: 150px;
+    margin: 5px 0 5px 0;
+}
+
+#name {
+    padding: 0 0 10px 0;
+}
+.comment-header {
+    position: relative;
+}
+#comment-area {
+    height: 120px;
+    width: 100%;
+    border-radius: 10px;
+    resize: none;
+}
+#share-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    border-radius: 6px;
+    background-color: #4267b2;
+    color: white;
+    width: 100px;
+    height: 35px;
+}
+
+#comment-area:focus {
+    outline:none !important;
+}
+
+#comment-list {
+    display: inline-block;
+    width: 100%;
+}
+
+.comment {
+    width: 100%;
+    float: left;
+    background-color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.nav-btn {
+    position: fixed;
+    top: 20%;
+    opacity: 0.4;
+    border-radius: 6px;
+    background-color: #4267b2;
+    color: white;
+    width: 50px;
+    height: 35px;
+    font-size: 1.3em;
+}
+
+#next-btn {
+    right: 5px;
+ }
+
+
+#pre-btn {
+    left: 5px;
+ }
+
+
+#next-btn:hover, #pre-btn:hover{
+    opacity: 100;
+}
+
+#comment-msg
+{
+    color: red;
+    display: block;
+}
+
+[class*="col-"]
+{
+    width: 100%;
+}
+
+@media screen and (min-width: 800px)
+{
+    #dp{
+        border-radius: 0;
+        border: 5px solid green;
+        width: 150px;
+        height: 150px;
+        margin: 5px 0 5px 0;
+    }
+}
+
+@media only screen and (min-width: 800px)
+{
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+
+
+
+@media only screen and (max-width: 500px)
+{
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px)
+{
+    #dp{
+        border-radius: 20px;
+        border: 5px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 5px 0 5px 0;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px)
+{
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+}
+
